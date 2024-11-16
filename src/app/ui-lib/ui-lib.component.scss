@@ -1,15 +1,17 @@
 .listing {
   background: var(--accent-color);
-  border-radius: 30px;
+  border-radius: 10px;
   width: 100%;
   font-size: 16px;
-  padding-left: 75px;
-  padding-bottom: 10px;
   cursor: pointer;
+  height: 48px;
+}
+.listing:hover {
+  background-color: rgb(223 222 226);
 }
 .listing-heading {
   color: var(--primary-color);
-  padding: 10px 20px 0 20px;
+  padding: 14px 20px 0 20px;
   font-size: 18px;
   font-weight: 500;
 }
