@@ -12,10 +12,10 @@ export class UiTextfieldComponent {
   @Input('id') id = '';
   @Input('label') label = '';
   @Input('value') value = '';
-  @Input('hasError') hasError = '';
+  @Input('hasError') hasError = false;
   @Input('placeholder') placeholder = '';
   @Input('maxLength') maxLength = 25;
-  @Input('errorMessage') errorMessage = false;
+  @Input('errorMessage') errorMessage = '';
   @Input('disabled') disabled = false;
 
   onKeyUp(event: any) {
