@@ -9,7 +9,7 @@ import { UiTextfieldComponent } from 'app/ui-lib/ui-textfield/ui-textfield.compo
   styleUrl: './ui-textfield-showcase.component.scss'
 })
 export class UiTextfieldShowcaseComponent {
-  onKeyUp(event: any) {
+  onTextfieldInput(event: any) {
     console.log(event.changeEvent.target.value);
   }
 }
