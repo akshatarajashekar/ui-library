@@ -1,5 +1,15 @@
 .content {
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 240px calc(100% - 240px);
   font-family: sans-serif;
+  height: 100vh;
+}
+app-nav {
+  padding: 16px 8px;
+  height: 100vh;
+  display: block;
+  border-right: 1px solid #c4c6d0;
+}
+.component-container {
+  padding: 20px;
 }

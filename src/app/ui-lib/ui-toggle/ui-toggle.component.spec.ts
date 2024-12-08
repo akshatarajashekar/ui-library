@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MTextfieldComponent } from './m-textfield.component';
+import { UiToggleComponent } from './ui-toggle.component';
 
-describe('MTextfieldComponent', () => {
-  let component: MTextfieldComponent;
-  let fixture: ComponentFixture<MTextfieldComponent>;
+describe('UiToggleComponent', () => {
+  let component: UiToggleComponent;
+  let fixture: ComponentFixture<UiToggleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MTextfieldComponent]
+      imports: [UiToggleComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MTextfieldComponent);
+    fixture = TestBed.createComponent(UiToggleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MCheckboxComponent } from './m-checkbox.component';
+import { UiCardComponent } from './ui-card.component';
 
-describe('MCheckboxComponent', () => {
-  let component: MCheckboxComponent;
-  let fixture: ComponentFixture<MCheckboxComponent>;
+describe('UiCardComponent', () => {
+  let component: UiCardComponent;
+  let fixture: ComponentFixture<UiCardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MCheckboxComponent]
+      imports: [UiCardComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MCheckboxComponent);
+    fixture = TestBed.createComponent(UiCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

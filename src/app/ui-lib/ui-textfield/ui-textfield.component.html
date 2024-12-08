@@ -1,0 +1,14 @@
+<div class="ui-textfield">
+  <label>{{ label }}</label>
+  <div *ngIf="hasError" class="from-error">{{ errorMessage }}</div>
+  <input
+    [id]="id"
+    type="text"
+    (keyup)="onKeyUp($event)"
+    [disabled]="disabled"
+    class=""
+    [placeholder]="placeholder"
+    [maxLength]="maxLength"
+    [value]="value"
+  />
+</div>

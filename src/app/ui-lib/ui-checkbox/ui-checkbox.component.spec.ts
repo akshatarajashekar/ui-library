@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MToggleComponent } from './m-toggle.component';
+import { UiCheckboxComponent } from './ui-checkbox.component';
 
-describe('MToggleComponent', () => {
-  let component: MToggleComponent;
-  let fixture: ComponentFixture<MToggleComponent>;
+describe('UiCheckboxComponent', () => {
+  let component: UiCheckboxComponent;
+  let fixture: ComponentFixture<UiCheckboxComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MToggleComponent]
+      imports: [UiCheckboxComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MToggleComponent);
+    fixture = TestBed.createComponent(UiCheckboxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

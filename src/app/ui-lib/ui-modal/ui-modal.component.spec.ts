@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MCardComponent } from './m-card.component';
+import { UiModalComponent } from './ui-modal.component';
 
-describe('MCardComponent', () => {
-  let component: MCardComponent;
-  let fixture: ComponentFixture<MCardComponent>;
+describe('UiModalComponent', () => {
+  let component: UiModalComponent;
+  let fixture: ComponentFixture<UiModalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MCardComponent]
+      imports: [UiModalComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MCardComponent);
+    fixture = TestBed.createComponent(UiModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

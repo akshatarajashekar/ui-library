@@ -1,7 +1,17 @@
-.app-container {
-  display: grid;
-  grid-template-columns: 20% 80%;
+.navSearch {
+  width: 80% !important;
+  outline: 0 !important;
+  border: 1px solid #c4c6d0 !important;
+  margin-left: 13px;
+  margin-bottom: 16px;
+  border: solid 1px var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 4px;
+  display: inline-block;
+  width: 30%;
 }
+
 .results {
   display: grid;
   column-gap: 14px;
@@ -10,14 +20,7 @@
   margin-top: 50px;
   justify-content: space-around;
 }
-input[type="text"] {
-  border: solid 1px var(--primary-color);
-  padding: 10px;
-  border-radius: 8px;
-  margin-right: 4px;
-  display: inline-block;
-  width: 30%;
-}
+
 button {
   padding: 10px;
   border: solid 1px var(--primary-color);
@@ -25,16 +28,19 @@ button {
   color: white;
   border-radius: 8px;
 }
+
 @media (min-width: 500px) and (max-width: 768px) {
   .results {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
+
   input[type="text"] {
-      width: 70%;
-  }   
+    width: 70%;
+  }
 }
+
 @media (max-width: 499px) {
   .results {
-      grid-template-columns: 1fr;
-  }    
+    grid-template-columns: 1fr;
+  }
 }

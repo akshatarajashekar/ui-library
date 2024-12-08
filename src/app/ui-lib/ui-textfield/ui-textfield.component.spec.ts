@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MModalComponent } from './m-modal.component';
+import { UiTextfieldComponent } from './ui-textfield.component';
 
-describe('MModalComponent', () => {
-  let component: MModalComponent;
-  let fixture: ComponentFixture<MModalComponent>;
+describe('UiTextfieldComponent', () => {
+  let component: UiTextfieldComponent;
+  let fixture: ComponentFixture<UiTextfieldComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MModalComponent]
+      imports: [UiTextfieldComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MModalComponent);
+    fixture = TestBed.createComponent(UiTextfieldComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

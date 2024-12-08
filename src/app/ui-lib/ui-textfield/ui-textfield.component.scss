@@ -1,0 +1,26 @@
+
+@import "../../../styles.scss";
+
+.ui-textfield {
+  input[type='text'],
+  input[type='text']:focus-visible,
+  input[type='text']:-webkit-autofill,
+  input[type='text']:-webkit-autofill:hover,
+  input[type='text']:-webkit-autofill:focus,
+  input[type='text']:-webkit-autofill:focus-visible {
+    outline: 0 !important;
+  }
+  input[type='text'] {
+    border: 1px solid #c4c6d0 !important;
+    border: solid 1px var(--primary-color);
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px;
+  }
+  input {
+    &:disabled {
+      background-color: $light-gray;
+      cursor: not-allowed;
+    }
+  }
+}
