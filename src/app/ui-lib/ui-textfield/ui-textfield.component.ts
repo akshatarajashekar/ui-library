@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { UiTextfieldChange } from './textfield.change';
 
 @Component({
   selector: 'app-ui-textfield',
@@ -18,7 +19,9 @@ export class UiTextfieldComponent {
   @Input('errorMessage') errorMessage = '';
   @Input('disabled') disabled = false;
 
-  onKeyUp(event: any) {
-    console.log(event);
+  @Output('textFieldChange') textFieldChange = new EventEmitter<UiTextfieldChange>();
+
+  onTextfieldInput(event: any) {
+    this.textFieldChange.emit(new UiTextfieldChange(this, event));
   }
 }
