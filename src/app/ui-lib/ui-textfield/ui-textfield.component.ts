@@ -21,7 +21,7 @@ export class UiTextfieldComponent {
 
   @Output('textFieldChange') textFieldChange = new EventEmitter<UiTextfieldChange>();
 
-  onTextfieldInput(event: any) {
+  onKeyUp(event: any) {
     this.textFieldChange.emit(new UiTextfieldChange(this, event));
   }
 }
