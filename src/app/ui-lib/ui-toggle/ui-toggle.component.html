@@ -1,1 +1,11 @@
-<p>ui-toggle works!</p>
+<div class="ui-toggle">
+<div class="ui-form-label">{{ label }}</div>
+<label class="ui-toggle-element">
+  <input type="checkbox" [id]="id"
+  (click)="onClick($event)"
+  [disabled]="disabled"
+  [checked]="value"
+>
+  <span class="slider round"></span>
+</label>
+</div>

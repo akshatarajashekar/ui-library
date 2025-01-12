@@ -1,14 +1,18 @@
 <div class="ui-textfield">
-  <label>{{ label }}</label>
-  <div *ngIf="hasError" class="form-error">{{ errorMessage }}</div>
-  <input
-    [id]="id"
-    type="text"
-    (keyup)="onKeyUp($event)"
-    [disabled]="disabled"
-    [class.invalid]="hasError"
-    [placeholder]="placeholder"
-    [maxLength]="maxLength"
-    [value]="value"
-  />
+  <label class="ui-form-label">{{ label }}</label>
+  <div class="ui-textfield-wrapper">
+    
+    <input
+      class="ui-textfield-element"
+      [id]="id"
+      type="text"
+      (keyup)="onKeyUp($event)"
+      [disabled]="disabled"
+      [class.invalid]="hasError"
+      [placeholder]="placeholder"
+      [maxLength]="maxLength"
+      [value]="value"
+    />
+    <div *ngIf="hasError" class="form-error">{{ errorMessage }}</div>
+  </div>
 </div>

@@ -1,7 +1,12 @@
 @import "../../assets/color";
+@import "../../assets/ui-form";
 
 .ui-textfield {
-
+  &-element {
+    height: 38px;
+    font-size: 14px;
+    padding: 0 20px;
+  }
   input[type='text'],
   input[type='text']:focus-visible,
   input[type='text']:-webkit-autofill,
@@ -15,8 +20,11 @@
     border: 1px solid #c4c6d0;
     border-radius: 3px;
     display: inline-block;
-    padding: 5px;
-    width: 30%;
+    width: 100%;
+  }
+
+  input[type='text']:focus {
+    border-bottom: 2px solid $primary-color;
   }
 
   input {
@@ -28,15 +36,21 @@
 
   .form-error {
     font-size: 12px;
-    background-color: $alert-red;
-    color: white;
-    width: 30%;
+    // background-color: $alert-red;
+    color: $alert-red;
+    width: 100%;
     padding: 6px;
     border-radius: 3px;
   }
 
   .invalid {
-    border: 1px solid $alert-red !important;
+    border-bottom: 2px solid $alert-red !important;
     color: $alert-red;
+  }
+
+  &-wrapper {
+    height: 40px;
+    min-width: 200px;
+    width: 212px;
   }
 }

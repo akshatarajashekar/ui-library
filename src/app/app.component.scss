@@ -6,7 +6,7 @@
 }
 app-nav {
   padding: 16px 8px;
-  height: 100vh;
+  height: calc(100vh - 32px);
   display: block;
   border-right: 1px solid #c4c6d0;
 }

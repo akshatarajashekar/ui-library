@@ -1,0 +1,9 @@
+<div class="showcase-container">
+  <!-- <div class="showcase-header">Toggle</div> -->
+  <app-ui-toggle [id]="'showcase'" [value]="toggleOutputValue" [label]="'Enabled Toggle button'" (toggleChnage)="onToggle($event)"></app-ui-toggle>
+</div>
+
+<div class="showcase-container">
+  <!-- <div class="showcase-header">Toggle Disabled</div> -->
+  <app-ui-toggle [id]="'showcase'" [value]="toggleOutputValue" [label]="'Disabled Toggle button'" (toggleChnage)="onToggle($event)" [disabled]="true"></app-ui-toggle>
+</div>

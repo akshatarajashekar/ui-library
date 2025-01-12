@@ -1,12 +1,12 @@
 <div class="showcase-container">
-  <div class="showcase-header">Textfield</div>
-  <app-ui-textfield [id]="'showcase'" [value]="''" [placeholder]="'Enter text'" (textFieldChange)="onTextfieldInput($event)"></app-ui-textfield>
+  <!-- <div class="showcase-header">Textfield</div> -->
+  <app-ui-textfield [id]="'showcase'" [value]="''" [label]="'Name'" [placeholder]="'Enter text'" (textFieldChange)="onTextfieldInput($event)"></app-ui-textfield>
 </div>
 <div class="showcase-container">
-  <div class="showcase-header">Disabled textfield</div>
-  <app-ui-textfield [id]="'showcase'" [value]="''" [placeholder]="'Enter text'" [disabled]="true"></app-ui-textfield>
+  <!-- <div class="showcase-header">Disabled textfield</div> -->
+  <app-ui-textfield [id]="'showcase'" [value]="''" [label]="'Name'" [placeholder]="'Enter text'" [disabled]="true"></app-ui-textfield>
 </div>
 <div class="showcase-container">
-  <div class="showcase-header">Form field with Error</div>
-  <app-ui-textfield [id]="'showcase'" [value]="''" [placeholder]="'Enter text'" [disabled]="false" [hasError]="true" [errorMessage]="'Has error'"></app-ui-textfield>
+  <!-- <div class="showcase-header">Form field with Error</div> -->
+  <app-ui-textfield [id]="'showcase'" [value]="''" [label]="'Name'" [placeholder]="'Enter text'" [disabled]="false" [hasError]="true" [errorMessage]="'Invalid Input'"></app-ui-textfield>
 </div>
