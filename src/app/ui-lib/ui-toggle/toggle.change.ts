@@ -2,11 +2,11 @@ import { UiToggleComponent } from "./ui-toggle.component";
 
 export class UiToggleChange {
   changeEvent: Event;
-  value?: string;
+  value?: boolean;
   source: UiToggleComponent;
-  constructor(source: UiToggleComponent, changeEvent: Event) {
+  constructor(source: UiToggleComponent, changeEvent: Event, value: boolean) {
     this.source = source;
     this.changeEvent = changeEvent;
-    this.value = this.value;
+    this.value = value;
   }
 }

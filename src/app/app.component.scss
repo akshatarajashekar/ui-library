@@ -1,3 +1,5 @@
+@import "../app/assets/color";
+
 .content {
   display: grid;
   grid-template-columns: 240px calc(100% - 240px);
@@ -8,7 +10,7 @@ app-nav {
   padding: 16px 8px;
   height: calc(100vh - 32px);
   display: block;
-  border-right: 1px solid #c4c6d0;
+  border-right: 1px solid $border-gray;
 }
 .component-container {
   padding: 20px;

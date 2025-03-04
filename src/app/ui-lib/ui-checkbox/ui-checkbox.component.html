@@ -1,1 +1,17 @@
-<p>ui-checkbox works!</p>
+<div class="ui-checkbox">
+  <!-- <div class="ui-form-label">{{ label }}</div>   -->
+
+    <input
+      class="ui-checkbox-element"
+      [id]="id"
+      name="checkboxInput"
+      type="checkbox" 
+      (change)="onCheckboxSelected($event)"
+      [disabled]="disabled"
+      [checked]="checked"
+      [value]="value"
+      #checkboxElement
+    />
+    <label [for]="id"> {{ label }}</label><br>
+</div>
+

@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { UiCheckboxComponent } from './ui-lib/ui-checkbox/ui-checkbox.component';
 import { UiDropdownComponent } from './ui-lib/ui-dropdown/ui-dropdown.component';
-import { UiCardComponent } from './ui-lib/ui-card/ui-card.component';
 import { UiModalComponent } from './ui-lib/ui-modal/ui-modal.component';
 import { UiTextfieldShowcaseComponent } from './ui-pages/ui-textfield-showcase/ui-textfield-showcase.component';
 import { UiToggleShowcaseComponent } from './ui-pages/ui-toggle-showcase/ui-toggle-showcase.component';
+import { UiCheckboxShowcaseComponent } from './ui-pages/ui-checkbox-showcase/ui-checkbox-showcase.component';
+import { UiCardShowcaseComponent } from './ui-pages/ui-card-showcase/ui-card-showcase.component';
 
 export const routes: Routes = [
   {
@@ -18,7 +18,7 @@ export const routes: Routes = [
   },
   {
     path: 'checkbox',
-    component: UiCheckboxComponent
+    component: UiCheckboxShowcaseComponent
   },
   {
     path: 'dropdown',
@@ -26,7 +26,7 @@ export const routes: Routes = [
   },
   {
     path: 'card',
-    component: UiCardComponent
+    component: UiCardShowcaseComponent
   },
   {
     path: 'modal',

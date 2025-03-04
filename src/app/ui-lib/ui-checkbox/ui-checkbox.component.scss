@@ -1,0 +1,23 @@
+@import "../../assets/color";
+@import "../../assets/ui-form";
+
+.ui-checkbox {
+  input {
+    &:disabled {
+      background-color: $light-gray;
+      cursor: not-allowed;
+    }
+  }
+
+  input[type='checkbox'] {
+    padding: 10px;
+    accent-color:  $primary-color;
+  }
+  input[type='checkbox']:checked {
+    background-color: $primary-color;
+  }
+  input:checked + & {
+    background-color: $primary-color;
+  }
+}
+

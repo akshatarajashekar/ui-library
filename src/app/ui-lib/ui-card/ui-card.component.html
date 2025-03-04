@@ -1,1 +1,10 @@
-<p>ui-card works!</p>
+<div class="ui-card"  [id]="id">
+  <div class="ui-card-container">
+    <div class="ui-card-header">
+      <h1 class="ui-card-title">{{title}}</h1>
+      <div class="ui-card-button" *ngIf="displayButton">{{buttonLabel}}</div>
+    </div>
+    <div class="ui-card-description">{{description}}</div>
+  </div>
+</div>
+

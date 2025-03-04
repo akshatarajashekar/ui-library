@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output,ViewChild } from '@angular/core';
 import { UiToggleChange } from './toggle.change';
 @Component({
   selector: 'app-ui-toggle',
@@ -12,10 +12,11 @@ export class UiToggleComponent {
   @Input('value') value = false;
   @Input('disabled') disabled = false;
   @Input('id') id = '';
-  @Output('toggleChnage') toggleChnage = new EventEmitter<UiToggleChange>();
+  @Output('toggleChange') toggleChange = new EventEmitter<UiToggleChange>();
+  @ViewChild('toggleElement') private toggleElement: any;
 
   onClick(event: any) {
-    this.value = !this.value;
-    this.toggleChnage.emit(new UiToggleChange(this, event));
+    this.value = this.toggleElement.nativeElement.checked;
+    this.toggleChange.emit(new UiToggleChange(this, event, this.value));
   }
 }
