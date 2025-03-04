@@ -1,13 +1,16 @@
+@import "../assets/color";
+
 .listing {
+  font-family: "Nunito", sans-serif;
   background: var(--accent-color);
-  border-radius: 10px;
+  border-radius: 4px;
   width: 100%;
   font-size: 16px;
   cursor: pointer;
   height: 48px;
 }
 .listing:hover {
-  background-color: rgb(223 222 226);
+  background-color: $light-gray;
 }
 .listing-heading {
   color: var(--primary-color);

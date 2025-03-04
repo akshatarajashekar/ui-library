@@ -2,8 +2,9 @@
 
 .ui-card {
   width: 100%;
+  font-family: "Nunito", sans-serif;
   .ui-card-container {
-    border-radius: 3px;
+    border-radius: 4px;
     width: 300px;
     padding: 20px;
     margin: 1px;
@@ -11,6 +12,7 @@
   }
   .ui-card-container:hover {
     margin: 0px;
+    border-radius: 4px;
     border: 1px solid $border-gray;
     box-shadow: 0 0px 3px rgba(0, 0, 0, 0.4);
   }
