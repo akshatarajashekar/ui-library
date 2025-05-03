@@ -1,6 +1,5 @@
 <div class="ui-checkbox">
-  <!-- <div class="ui-form-label">{{ label }}</div>   -->
-
+  <div class="ui-checkbox-wrapper">
     <input
       class="ui-checkbox-element"
       [id]="id"
@@ -12,6 +11,7 @@
       [value]="value"
       #checkboxElement
     />
-    <label [for]="id"> {{ label }}</label><br>
+    <label class="ui-checkbox-label" [for]="id"> {{ label }}</label>
+  </div>
 </div>
 
