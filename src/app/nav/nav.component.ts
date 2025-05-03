@@ -38,6 +38,11 @@ export class NavComponent implements OnInit {
       path: 'checkbox',
     },
     {
+      id: 'radio',
+      name: 'Radio Button',
+      path: 'radio',
+    },
+    {
       id: 'dropdown',
       name: 'Dropdown',
       path: 'dropdown',
@@ -51,7 +56,43 @@ export class NavComponent implements OnInit {
       id: 'modal',
       name: 'Modal',
       path: 'modal',
-    }
+    },
+    {
+      id: 'accordian',
+      name: 'Accordian',
+      path: 'accordian',
+    },
+    {
+      id: 'table',
+      name: 'Table',
+      path: 'table',
+    },
+    {
+      id: 'tabs',
+      name: 'Tabs',
+      path: 'tabs',
+    },
+    {
+      id: 'progressbar',
+      name: 'Progress Bar',
+      path: 'progressbar',
+    },
+    {
+      id: 'spinner',
+      name: 'Spinner',
+      path: 'spinner',
+    },
+    {
+      id: 'tooltip',
+      name: 'Tooltip',
+      path: 'tooltip',
+    },
+    {
+      id: 'badge',
+      name: 'Badge',
+      path: 'badge',
+    },
+    
   ];
 
   navClick(item: UiLib) {

@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
   styleUrl: './ui-lib.component.scss'
 })
 export class UiLibComponent implements OnInit{
-  @Input() housingLocation!: UiLib;
+  @Input() navItem!: UiLib;
   constructor(private router: Router) {
   }
   ngOnInit() {
-    console.log(this.housingLocation, 'housingLocation')
+    console.log(this.navItem, 'navItem')
   }
   btnClick(id: any) {
     console.log('clicked', id)

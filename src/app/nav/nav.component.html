@@ -5,8 +5,8 @@
 </section>
 <section>
   <app-ui-lib
-      *ngFor="let housingLocation of navInfoList"
-      [housingLocation]="housingLocation"
-      (click)="navClick(housingLocation)"
+      *ngFor="let navItem of navInfoList"
+      [navItem]="navItem"
+      (click)="navClick(navItem)"
     ></app-ui-lib>
 </section>
