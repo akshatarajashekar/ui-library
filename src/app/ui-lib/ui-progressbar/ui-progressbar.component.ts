@@ -11,4 +11,5 @@ import { Component, Input } from '@angular/core';
 export class UiProgressbarComponent {
   @Input('value') value = 0;
   @Input('progressWidth') progressWidth = 200;
+  @Input('type') type:  'indeterminate' | 'determinate' = 'determinate'
 }

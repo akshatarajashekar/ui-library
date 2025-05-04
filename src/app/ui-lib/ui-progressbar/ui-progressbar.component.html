@@ -1,5 +1,6 @@
-<div class="ui-progress">
-  <label>
-    <progress [value]="value" max="100" style="--w: {{progressWidth}}px"></progress>
-  </label>
+<div class="ui-progress" style="--w: {{progressWidth}}px">
+      <progress [value]="value" max="100" *ngIf="type === 'determinate'"></progress>
+  <div class="progress-bar"  *ngIf="type === 'indeterminate'">
+    <div class="progress-bar-value"></div>
+  </div>
 </div>

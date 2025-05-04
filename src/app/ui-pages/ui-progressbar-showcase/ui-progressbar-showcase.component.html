@@ -1,5 +1,8 @@
 <div class="showcase-container">
-  <div class="progress-showcase-text"> Progression 
-    <app-ui-progressbar [value]="value" [progressWidth]="700"></app-ui-progressbar>
+  <div class="progress-showcase-text"> Determinate progress-bar 
+    <app-ui-progressbar [value]="value" [progressWidth]="700" [type]="'determinate'"></app-ui-progressbar>
+  </div>
+  <div class="progress-showcase-text"> Indeterminate progress-bar  
+    <app-ui-progressbar [value]="value" [progressWidth]="700" [type]="'indeterminate'"></app-ui-progressbar>
   </div>
 </div>
