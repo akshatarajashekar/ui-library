@@ -104,6 +104,5 @@ export class NavComponent implements OnInit {
   searchNav(event: any) {
     this.navInfoList = this.filterItems;
     this.navInfoList = this.navInfoList.filter((ele) => ele.name.includes(event.target.value))
-    console.log(this.navSearch, 'navSearch', event.target.value)
   }
 }

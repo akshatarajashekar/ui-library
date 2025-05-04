@@ -12,10 +12,8 @@ export class UiLibComponent implements OnInit{
   constructor(private router: Router) {
   }
   ngOnInit() {
-    console.log(this.navItem, 'navItem')
   }
   btnClick(id: any) {
-    console.log('clicked', id)
     this.router.navigate([`/${id}`]);
   }
 

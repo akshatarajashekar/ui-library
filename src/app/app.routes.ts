@@ -10,14 +10,15 @@ import { UiBadgeShowcaseComponent } from './ui-pages/ui-badge-showcase/ui-badge-
 import { UiSpinnerShowcaseComponent } from './ui-pages/ui-spinner-showcase/ui-spinner-showcase.component';
 import { UiTabShowcaseComponent } from './ui-pages/ui-tab-showcase/ui-tab-showcase.component';
 import { UiTooltipShowcaseComponent } from './ui-pages/ui-tooltip-showcase/ui-tooltip-showcase.component';
-import { UiProgressbarComponent } from './ui-lib/ui-progressbar/ui-progressbar.component';
 import { UiTableShowcaseComponent } from './ui-pages/ui-table-showcase/ui-table-showcase.component';
 import { UiRadioShowcaseComponent } from './ui-pages/ui-radio-showcase/ui-radio-showcase.component';
+import { UiAccordianShowcaseComponent } from './ui-pages/ui-accordian-showcase/ui-accordian-showcase.component';
+import { UiProgressbarShowcaseComponent } from './ui-pages/ui-progressbar-showcase/ui-progressbar-showcase.component';
 
 export const routes: Routes = [
   {
     path: 'accordian',
-    component: UiSpinnerShowcaseComponent
+    component: UiAccordianShowcaseComponent
   },
   {
     path: 'badge',
@@ -41,7 +42,7 @@ export const routes: Routes = [
   },
   {
     path: 'progressbar',
-    component: UiProgressbarComponent
+    component: UiProgressbarShowcaseComponent
   },
   {
     path: 'radio',

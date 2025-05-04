@@ -1,0 +1,33 @@
+@import "../../assets/color";
+
+.ui-progress {
+  progress[value] {
+    --color:  /* the progress color */
+      linear-gradient(#fff8,#fff0),
+      repeating-linear-gradient(120deg,#2196F3 0 8px,#0000 0 15px), #7dc6f0b1;
+    --background: lightgrey; /* the background color */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width:  var(--w); /* the progress width */
+    height: 10px;
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-bar {
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-value {
+    background: var(--color);
+  }
+  progress[value]::-moz-progress-bar {
+    background: var(--color);
+  }
+  
+  label {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: 20px 0;
+  }
+}
