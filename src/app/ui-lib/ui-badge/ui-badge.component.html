@@ -1,1 +1,3 @@
-<span [id]="id" [ngClass]="'ui-badge ui-badge-' + size">{{badgetext}}</span>
+<span [id]="id" [ngClass]="'ui-badge ui-badge-' + size + '-' + type" style="--c: {{ color }}" *ngIf="type === 'circle'">{{badgetext}}</span>
+
+<span [id]="id" [ngClass]="'ui-badge ui-badge-' + size + '-' + type" style="--c: {{ color }}" *ngIf="type === 'rectangle'">{{badgetext}}</span>

@@ -5,41 +5,62 @@
   text-align: center;
   display: inline-block;
   transition: transform 200ms ease-in-out;
-  transform: scale(0.6);
+  transform: none;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   box-sizing: border-box;
   pointer-events: none;
-  background-color: $error;
+  background-color: var(--c);
   color: white;
   font-family: "Nunito", sans-serif;
   font-weight: 500;
-  border-radius: 25px;
+  padding: 0 4px;
   &-small {
     min-width: 6px;
     min-height: 6px;
     line-height: 6px;
-    transform: none;
-    font-size: .0;
-    padding: 0 ;
+    font-size: 0;
+    padding: 0;
     margin: -2px 0;
+    border-radius: 25px;
   }
   &-medium {
     min-width: 16px;
     min-height: 16px;
-    transform: none;
     font-size: .688rem;
-    padding: 0 4px;
     margin: -12px 0;
     line-height: 16px;
+    border-radius: 25px;
   }
   &-large {
     min-width: 23px;
     min-height: 23px;
-    transform: none;
     font-size: 0.750rem;
     margin: -15px 0;
     line-height: 23px;
+    border-radius: 25px;
+  }
+  &-small-circle, &-small-rectangle {
+    @extend .ui-badge-small;
+  }
+  &-medium-circle {
+    @extend .ui-badge-medium;
+  }
+  &-large-circle {
+    @extend .ui-badge-large;
+  }
+  &-small-rectangle {
+    border-radius: 7px;
+  }
+  &-medium-rectangle {
+    @extend .ui-badge-medium;
+    font-size: 0.65rem;
+    border-radius: 5px;
+  }
+  &-large-rectangle {
+    @extend .ui-badge-large;
+    border-radius: 7px;
+    
   }
 }
